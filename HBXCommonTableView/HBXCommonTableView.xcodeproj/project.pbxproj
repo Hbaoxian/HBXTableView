@@ -13,7 +13,18 @@
 		816328C41CEDFDCC00DEC640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816328C21CEDFDCC00DEC640 /* Main.storyboard */; };
 		816328C61CEDFDCC00DEC640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816328C51CEDFDCC00DEC640 /* Assets.xcassets */; };
 		816328C91CEDFDCC00DEC640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816328C71CEDFDCC00DEC640 /* LaunchScreen.storyboard */; };
+		816329021CEE076400DEC640 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 816328FE1CEE076400DEC640 /* Info.plist */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		816329041CEE076400DEC640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 816328FF1CEE076400DEC640 /* HCommonTableView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 816328F01CEE073E00DEC640;
+			remoteInfo = HCommonTableView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		816328B61CEDFDCC00DEC640 /* HBXCommonTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBXCommonTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +37,9 @@
 		816328C51CEDFDCC00DEC640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		816328C81CEDFDCC00DEC640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		816328CA1CEDFDCC00DEC640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816328FD1CEE076400DEC640 /* HCommonTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCommonTableView.h; sourceTree = "<group>"; };
+		816328FE1CEE076400DEC640 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816328FF1CEE076400DEC640 /* HCommonTableView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HCommonTableView.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +56,7 @@
 		816328AD1CEDFDCC00DEC640 = {
 			isa = PBXGroup;
 			children = (
+				816328FB1CEE076400DEC640 /* HCommonTableView */,
 				816328B81CEDFDCC00DEC640 /* HBXCommonTableView */,
 				816328B71CEDFDCC00DEC640 /* Products */,
 			);
@@ -77,6 +92,32 @@
 				816328BA1CEDFDCC00DEC640 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		816328FB1CEE076400DEC640 /* HCommonTableView */ = {
+			isa = PBXGroup;
+			children = (
+				816328FC1CEE076400DEC640 /* HCommonTableView */,
+				816328FF1CEE076400DEC640 /* HCommonTableView.xcodeproj */,
+			);
+			path = HCommonTableView;
+			sourceTree = "<group>";
+		};
+		816328FC1CEE076400DEC640 /* HCommonTableView */ = {
+			isa = PBXGroup;
+			children = (
+				816328FD1CEE076400DEC640 /* HCommonTableView.h */,
+				816328FE1CEE076400DEC640 /* Info.plist */,
+			);
+			path = HCommonTableView;
+			sourceTree = "<group>";
+		};
+		816329001CEE076400DEC640 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				816329051CEE076400DEC640 /* HCommonTableView.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +165,12 @@
 			mainGroup = 816328AD1CEDFDCC00DEC640;
 			productRefGroup = 816328B71CEDFDCC00DEC640 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 816329001CEE076400DEC640 /* Products */;
+					ProjectRef = 816328FF1CEE076400DEC640 /* HCommonTableView.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				816328B51CEDFDCC00DEC640 /* HBXCommonTableView */,
@@ -131,11 +178,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		816329051CEE076400DEC640 /* HCommonTableView.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = HCommonTableView.framework;
+			remoteRef = 816329041CEE076400DEC640 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		816328B41CEDFDCC00DEC640 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				816329021CEE076400DEC640 /* Info.plist in Resources */,
 				816328C91CEDFDCC00DEC640 /* LaunchScreen.storyboard in Resources */,
 				816328C61CEDFDCC00DEC640 /* Assets.xcassets in Resources */,
 				816328C41CEDFDCC00DEC640 /* Main.storyboard in Resources */,
@@ -213,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -251,7 +309,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +358,7 @@
 				816328CF1CEDFDCC00DEC640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
