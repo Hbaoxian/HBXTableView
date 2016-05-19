@@ -8,20 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		816328F41CEE073E00DEC640 /* HCommonTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 816328F31CEE073E00DEC640 /* HCommonTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		816329081CEE081100DEC640 /* HCommonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 816329061CEE081100DEC640 /* HCommonItem.h */; };
-		816329091CEE081100DEC640 /* HCommonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 816329071CEE081100DEC640 /* HCommonItem.m */; };
-		816329101CEE09A300DEC640 /* HBXCommonTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8163290E1CEE09A300DEC640 /* HBXCommonTableView.h */; };
-		816329111CEE09A300DEC640 /* HBXCommonTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8163290F1CEE09A300DEC640 /* HBXCommonTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		816328F01CEE073E00DEC640 /* HCommonTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HCommonTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		816328F31CEE073E00DEC640 /* HCommonTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HCommonTableView.h; sourceTree = "<group>"; };
 		816328F51CEE073E00DEC640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		816329061CEE081100DEC640 /* HCommonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCommonItem.h; sourceTree = "<group>"; };
-		816329071CEE081100DEC640 /* HCommonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCommonItem.m; sourceTree = "<group>"; };
-		8163290E1CEE09A300DEC640 /* HBXCommonTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXCommonTableView.h; sourceTree = "<group>"; };
-		8163290F1CEE09A300DEC640 /* HBXCommonTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXCommonTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +48,6 @@
 			children = (
 				816328F31CEE073E00DEC640 /* HCommonTableView.h */,
 				816328F51CEE073E00DEC640 /* Info.plist */,
-				816329061CEE081100DEC640 /* HCommonItem.h */,
-				816329071CEE081100DEC640 /* HCommonItem.m */,
-				8163290E1CEE09A300DEC640 /* HBXCommonTableView.h */,
-				8163290F1CEE09A300DEC640 /* HBXCommonTableView.m */,
 			);
 			path = HCommonTableView;
 			sourceTree = "<group>";
@@ -72,8 +60,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				816328F41CEE073E00DEC640 /* HCommonTableView.h in Headers */,
-				816329081CEE081100DEC640 /* HCommonItem.h in Headers */,
-				816329101CEE09A300DEC640 /* HBXCommonTableView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +130,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				816329091CEE081100DEC640 /* HCommonItem.m in Sources */,
-				816329111CEE09A300DEC640 /* HBXCommonTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

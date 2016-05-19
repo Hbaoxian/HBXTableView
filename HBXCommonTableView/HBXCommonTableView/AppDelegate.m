@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "HCommonTableView.h"
-
-
+#import "HBXTableViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +19,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    CGRect rect = [UIScreen mainScreen].bounds;
+    self.window = [[UIWindow alloc] initWithFrame: rect];
+    
+    HBXTableViewController *tableViewController = [[HBXTableViewController alloc] init];
+    ViewController *controller = [[ViewController alloc] init];
+    UINavigationController *naController = [[UINavigationController alloc] initWithRootViewController:controller];
+    self.window.rootViewController = naController;
+    
+    
+    [self.window makeKeyAndVisible];
+    [self.window makeKeyWindow];
     // Override point for customization after application launch.
     return YES;
 }

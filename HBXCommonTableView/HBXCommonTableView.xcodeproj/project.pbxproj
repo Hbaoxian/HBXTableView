@@ -14,6 +14,9 @@
 		816328C61CEDFDCC00DEC640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816328C51CEDFDCC00DEC640 /* Assets.xcassets */; };
 		816328C91CEDFDCC00DEC640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816328C71CEDFDCC00DEC640 /* LaunchScreen.storyboard */; };
 		816329021CEE076400DEC640 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 816328FE1CEE076400DEC640 /* Info.plist */; };
+		816329161CEE0C6B00DEC640 /* HCommonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 816329151CEE0C6B00DEC640 /* HCommonItem.m */; };
+		816329191CEE0CC200DEC640 /* HBXTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816329181CEE0CC200DEC640 /* HBXTableViewController.m */; };
+		8163291C1CEE0FF400DEC640 /* HBXCommontTabelViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8163291B1CEE0FF400DEC640 /* HBXCommontTabelViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		816328FD1CEE076400DEC640 /* HCommonTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCommonTableView.h; sourceTree = "<group>"; };
 		816328FE1CEE076400DEC640 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		816328FF1CEE076400DEC640 /* HCommonTableView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = HCommonTableView.xcodeproj; sourceTree = "<group>"; };
+		816329141CEE0C6B00DEC640 /* HCommonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCommonItem.h; sourceTree = "<group>"; };
+		816329151CEE0C6B00DEC640 /* HCommonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCommonItem.m; sourceTree = "<group>"; };
+		816329171CEE0CC200DEC640 /* HBXTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXTableViewController.h; sourceTree = "<group>"; };
+		816329181CEE0CC200DEC640 /* HBXTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXTableViewController.m; sourceTree = "<group>"; };
+		8163291A1CEE0FF400DEC640 /* HBXCommontTabelViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBXCommontTabelViewCell.h; sourceTree = "<group>"; };
+		8163291B1CEE0FF400DEC640 /* HBXCommontTabelViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBXCommontTabelViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +82,8 @@
 		816328B81CEDFDCC00DEC640 /* HBXCommonTableView */ = {
 			isa = PBXGroup;
 			children = (
+				816329131CEE0C5A00DEC640 /* HCommonView */,
+				816329121CEE0C4600DEC640 /* HCommonItem */,
 				816328BC1CEDFDCC00DEC640 /* AppDelegate.h */,
 				816328BD1CEDFDCC00DEC640 /* AppDelegate.m */,
 				816328BF1CEDFDCC00DEC640 /* ViewController.h */,
@@ -118,6 +129,26 @@
 				816329051CEE076400DEC640 /* HCommonTableView.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		816329121CEE0C4600DEC640 /* HCommonItem */ = {
+			isa = PBXGroup;
+			children = (
+				816329171CEE0CC200DEC640 /* HBXTableViewController.h */,
+				816329181CEE0CC200DEC640 /* HBXTableViewController.m */,
+				8163291A1CEE0FF400DEC640 /* HBXCommontTabelViewCell.h */,
+				8163291B1CEE0FF400DEC640 /* HBXCommontTabelViewCell.m */,
+			);
+			path = HCommonItem;
+			sourceTree = "<group>";
+		};
+		816329131CEE0C5A00DEC640 /* HCommonView */ = {
+			isa = PBXGroup;
+			children = (
+				816329141CEE0C6B00DEC640 /* HCommonItem.h */,
+				816329151CEE0C6B00DEC640 /* HCommonItem.m */,
+			);
+			path = HCommonView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				816329161CEE0C6B00DEC640 /* HCommonItem.m in Sources */,
 				816328C11CEDFDCC00DEC640 /* ViewController.m in Sources */,
 				816328BE1CEDFDCC00DEC640 /* AppDelegate.m in Sources */,
 				816328BB1CEDFDCC00DEC640 /* main.m in Sources */,
+				8163291C1CEE0FF400DEC640 /* HBXCommontTabelViewCell.m in Sources */,
+				816329191CEE0CC200DEC640 /* HBXTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

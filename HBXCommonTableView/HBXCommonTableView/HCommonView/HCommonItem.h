@@ -1,6 +1,6 @@
 //
 //  HCommonItem.h
-//  HCommonTableView
+//  HBXCommonTableView
 //
 //  Created by 黄保贤 on 16/5/19.
 //  Copyright © 2016年 黄保贤. All rights reserved.
@@ -12,7 +12,12 @@
 
 @property (nullable, nonatomic, copy) NSString *title;
 @property (nullable, nonatomic, copy) NSString *iconImg;
-@property (nullable, nonatomic, copy) void^()optin;
+@property (nullable, nonatomic, copy) NSString *subTitle;
+@property (nullable, nonatomic, copy) void (^operation)();
+
++ (nullable HCommonItem *)initWithTitle:(nullable NSString *)title;
++ (nullable HCommonItem *)initWithTitle:(nullable NSString *)title icon:(nullable NSString *)icon;
+
 
 
 @end
