@@ -33,6 +33,7 @@
         NSLog(@"hello world");
     };
     HCommonItem *item2 = [HCommonItem initWithTitle:@"失败"];
+    item1.className = @"UIViewController";
     HCommonItem *item3 = [HCommonItem initWithTitle:@"努力"];
     HCommonItem *item4 = [HCommonItem initWithTitle:@"奋进"];
     HCommonItem *item5 = [HCommonItem initWithTitle:@"收获"];

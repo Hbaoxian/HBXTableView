@@ -59,6 +59,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     HCommonItem *item = self.group[indexPath.section][indexPath.row];
+    if (item.className) {
+        UIViewController *controller = [[NSClassFromString(item.className) alloc] init];
+        [self.navigationController pushViewController:controller animated:YES];
+    }
     if (item.operation) {
         item.operation();
     }
