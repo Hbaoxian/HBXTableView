@@ -9,10 +9,8 @@
 #import "HBXTableViewController.h"
 #import "HCommonItem.h"
 #import "HBXCommontTabelViewCell.h"
+#import "HBXCommonTabldeDefineHeader.h"
 
-#define  KSYSTEM_Width [UIScreen mainScreen].bounds.size.width
-#define  KSYSTEM_Height [UIScreen mainScreen].bounds.size.height
-#define  KTABLEVIEWCELLDEFAULTHEIGHT 50
 
 @interface HBXTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -33,6 +31,7 @@
 #pragma mark - public
 
 - (void)groupArray:(NSArray *)array {
+    [self.group removeAllObjects];
     [self.group addObjectsFromArray:array];
 }
 
@@ -81,6 +80,7 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, KSYSTEM_Width, KSYSTEM_Height) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _tableView.tableFooterView = [[UIView alloc] init];
         
     }
