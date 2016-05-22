@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HBXCommonTabldeDefineHeader.h"
 
 @interface HCommonItem : NSObject
 
@@ -15,6 +16,7 @@
 @property (nullable, nonatomic, copy) NSString *subTitle;
 @property (nullable, nonatomic, copy) void (^operation)();
 @property (nullable, nonatomic, copy) NSString *className;//一般用于控制器
+@property (nonatomic, assign)         HBXTableViewCellAccessoryType  accessoryType;
 
 + (nullable HCommonItem *)initWithTitle:(nullable NSString *)title;
 + (nullable HCommonItem *)initWithTitle:(nullable NSString *)title icon:(nullable NSString *)icon;

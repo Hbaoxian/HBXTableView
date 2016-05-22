@@ -14,6 +14,14 @@
 #define  KTABLEVIEWCELLDEFAULTHEIGHT 50
 #define HBXCOMMONTABLEVIEWCELLHEIGHT 50
 
+#define HBXTableViewCellAsstypeArrowName @"cell_arrow"
+#define HBXTableViewCellAsstypebadgeName @"new_badge"
+
+
+typedef NS_ENUM(NSInteger, HBXTableViewCellAccessoryType) {
+    HBXTableViewCellAccessoryTypeArrow = 0,
+    HBXTableViewCellAccessoryTypeBadge
+};
 
 
 #endif /* HBXCommonTabldeDefineHeader_h */
