@@ -16,6 +16,9 @@
 @interface HBXCommontTabelViewCell ()
 
 @property (nonnull, nonatomic ,strong) UIView *sepLine;
+@property (nonatomic, strong)          UIImageView *ArrowImgView;
+@property (nonatomic, strong)          UILabel *badgeLabel;
+
 
 @end
 
@@ -56,10 +59,6 @@
     if (item.subTitle) {
         self.detailTextLabel.text = item.subTitle;
     }
-    
-    self.detailTextLabel.backgroundColor = [UIColor redColor];
-    
-    
 }
 
 - (void)awakeFromNib {
@@ -87,6 +86,21 @@
     self.detailTextLabel.frame = CGRectMake(self.textLabel.frame.origin.x + self.textLabel.frame.size.width + 10, (HBXCOMMONTABLEVIEWCELLHEIGHT - 20)/2, 200, 20);
 }
 
+#pragma mark - getter
+
+- (UIImageView *)ArrowImgView {
+    if (!_ArrowImgView) {
+        _ArrowImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:HBXTableViewCellAsstypeArrowName]];
+    }
+    return _ArrowImgView;
+}
+- (UILabel *)badgeLabel {
+    if (!_badgeLabel) {
+        _badgeLabel = [[UILabel alloc] init];
+        _badgeLabel.textColor = [UIColor colorWithRed:220 green:220 blue:220 alpha:1.0];
+    }
+    return _badgeLabel;
+}
 - (UIView *)sepLine {
     if (!_sepLine) {
         _sepLine = [[UIView alloc] init];

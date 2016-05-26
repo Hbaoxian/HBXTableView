@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HBXCommonTabldeDefineHeader.h"
 
 @interface HCommonItem : NSObject
 

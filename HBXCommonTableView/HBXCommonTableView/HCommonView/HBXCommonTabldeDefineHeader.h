@@ -20,7 +20,8 @@ typedef NS_ENUM(NSInteger, HBXCommonTableViewCellAccessoryType) {
     HBXCommonTableViewCellAccessoryTypeArrowText,
 };
 
-
+#define HBXTableViewCellAsstypeArrowName @"cell_arrow"
+#define HBXTableViewCellAsstypebadgeName @"new_badge"
 #define KArrowImgName @"arrowback-press"
 #define KBadgeiconName_BigNumber @"order_badge00_bg"
 #define KBadgeiconName_SmallNumber @"order_badge_bg"
