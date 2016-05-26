@@ -60,7 +60,6 @@
     self.detailTextLabel.backgroundColor = [UIColor redColor];
     
     
-    
 }
 
 - (void)awakeFromNib {

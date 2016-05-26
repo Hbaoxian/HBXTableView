@@ -14,6 +14,15 @@
 #define  KTABLEVIEWCELLDEFAULTHEIGHT 50
 #define HBXCOMMONTABLEVIEWCELLHEIGHT 50
 
+typedef NS_ENUM(NSInteger, HBXCommonTableViewCellAccessoryType) {
+    HBXCommonTableViewCellAccessoryTypeArrow = 0,
+    HBXCommonTableViewCellAccessoryTypeBadge,
+    HBXCommonTableViewCellAccessoryTypeArrowText,
+};
 
+
+#define KArrowImgName @"arrowback-press"
+#define KBadgeiconName_BigNumber @"order_badge00_bg"
+#define KBadgeiconName_SmallNumber @"order_badge_bg"
 
 #endif /* HBXCommonTabldeDefineHeader_h */
