@@ -25,5 +25,6 @@ typedef NS_ENUM(NSInteger, HBXCommonTableViewCellAccessoryType) {
 #define KArrowImgName @"arrowback-press"
 #define KBadgeiconName_BigNumber @"order_badge00_bg"
 #define KBadgeiconName_SmallNumber @"order_badge_bg"
+#import "UIView+helper.h"
 
 #endif /* HBXCommonTabldeDefineHeader_h */

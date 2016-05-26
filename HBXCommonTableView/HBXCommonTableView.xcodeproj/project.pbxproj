@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815DB57E1CF69D8900151E3D /* UIView+helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 815DB57D1CF69D8900151E3D /* UIView+helper.m */; };
 		816328BB1CEDFDCC00DEC640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 816328BA1CEDFDCC00DEC640 /* main.m */; };
 		816328BE1CEDFDCC00DEC640 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 816328BD1CEDFDCC00DEC640 /* AppDelegate.m */; };
 		816328C11CEDFDCC00DEC640 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 816328C01CEDFDCC00DEC640 /* ViewController.m */; };
@@ -31,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		81152C321CEEE48400E8D1E7 /* HBXCommonTabldeDefineHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HBXCommonTabldeDefineHeader.h; sourceTree = "<group>"; };
+		815DB57C1CF69D8900151E3D /* UIView+helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+helper.h"; sourceTree = "<group>"; };
+		815DB57D1CF69D8900151E3D /* UIView+helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+helper.m"; sourceTree = "<group>"; };
 		816328B61CEDFDCC00DEC640 /* HBXCommonTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBXCommonTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		816328BA1CEDFDCC00DEC640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		816328BC1CEDFDCC00DEC640 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,6 +149,8 @@
 		816329131CEE0C5A00DEC640 /* HCommonView */ = {
 			isa = PBXGroup;
 			children = (
+				815DB57C1CF69D8900151E3D /* UIView+helper.h */,
+				815DB57D1CF69D8900151E3D /* UIView+helper.m */,
 				816329141CEE0C6B00DEC640 /* HCommonItem.h */,
 				816329151CEE0C6B00DEC640 /* HCommonItem.m */,
 				81152C321CEEE48400E8D1E7 /* HBXCommonTabldeDefineHeader.h */,
@@ -244,6 +249,7 @@
 				816328C11CEDFDCC00DEC640 /* ViewController.m in Sources */,
 				816328BE1CEDFDCC00DEC640 /* AppDelegate.m in Sources */,
 				816328BB1CEDFDCC00DEC640 /* main.m in Sources */,
+				815DB57E1CF69D8900151E3D /* UIView+helper.m in Sources */,
 				8163291C1CEE0FF400DEC640 /* HBXCommontTabelViewCell.m in Sources */,
 				816329191CEE0CC200DEC640 /* HBXTableViewController.m in Sources */,
 			);

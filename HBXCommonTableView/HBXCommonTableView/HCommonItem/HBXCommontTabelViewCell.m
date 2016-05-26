@@ -18,7 +18,7 @@
 @property (nonnull, nonatomic ,strong) UIView *sepLine;
 @property (nonatomic, strong)          UIImageView *ArrowImgView;
 @property (nonatomic, strong)          UILabel *badgeLabel;
-
+@property (nonatomic, strong)          UIImageView *badgeView;
 
 @end
 
@@ -59,6 +59,31 @@
     if (item.subTitle) {
         self.detailTextLabel.text = item.subTitle;
     }
+    if (item.badege && item.badege.integerValue > 0) {
+        self.accessoryView = self.badgeView;
+        [self updateBadgeFrame];
+    }else if(item.cellAccessoryType == HBXCommonTableViewCellAccessoryTypeArrow) {
+        self.accessoryView = self.ArrowImgView;
+    }else {
+        self.accessoryView = nil;
+    }
+}
+
+
+- (void)updateBadgeFrame {
+    self.badgeLabel.text = _item.badege;
+    [self.badgeLabel sizeToFit];
+    
+    if (_item.badege.integerValue > 9) {
+         UIImage *image = [UIImage imageNamed:KBadgeiconName_BigNumber];
+        self.badgeView.size = image.size;
+        self.badgeView.image = image;
+    }else {
+         UIImage *image = [UIImage imageNamed:KBadgeiconName_SmallNumber];
+        self.badgeView.size = image.size;
+        self.badgeView.image = image;
+    }
+    self.badgeLabel.frame = self.badgeView.bounds;
 }
 
 - (void)awakeFromNib {
@@ -97,9 +122,21 @@
 - (UILabel *)badgeLabel {
     if (!_badgeLabel) {
         _badgeLabel = [[UILabel alloc] init];
+        _badgeLabel.font = [UIFont systemFontOfSize:12.f];
+        _badgeLabel.textColor = [UIColor whiteColor];
+        _badgeLabel.textAlignment = NSTextAlignmentCenter;
         _badgeLabel.textColor = [UIColor colorWithRed:220 green:220 blue:220 alpha:1.0];
     }
     return _badgeLabel;
+}
+- (UIImageView *)badgeView {
+    if (!_badgeView) {
+        UIImage *image = [UIImage imageNamed:HBXTableViewCellAsstypebadgeName];
+        _badgeView = [[UIImageView alloc] initWithImage:image];
+        [_badgeView addSubview:self.badgeLabel];
+        self.badgeView.frame = _badgeLabel.bounds;
+    }
+    return _badgeView;
 }
 - (UIView *)sepLine {
     if (!_sepLine) {
